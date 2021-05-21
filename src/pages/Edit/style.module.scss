@@ -1,0 +1,61 @@
+.form_container {
+  background-color: rgb(143, 138, 138);
+  padding: 1.5em;
+  height: 85vh;
+
+  h1 {
+    font-size: 1.3em;
+    color: rgb(230, 7, 7);
+    text-decoration: underline;
+
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto;
+    max-width: 600px;
+
+    label {
+      color: rgb(230, 7, 7);
+      font-weight: bold;
+    }
+    input,
+    textarea {
+      margin: 1em 0;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      color: rgb(197, 37, 9) !important;
+      background-color: rgb(184, 180, 180);
+      font-size: 1.1em !important;
+    }
+    input {
+      height: 30px;
+    }
+    textarea {
+      height: 130px;
+      resize: none;
+    }
+    button {
+      height: 50px;
+      border: none;
+      margin: 2em 0;
+      border-radius: 5px;
+      background-color: rgb(230, 7, 7);
+      color: white;
+      font-weight: bolder;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}

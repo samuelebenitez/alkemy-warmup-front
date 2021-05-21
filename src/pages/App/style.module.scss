@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(143, 138, 138);
+    h1 {
+      padding: 0.5em;
+
+      color: rgb(230, 7, 7);
+      text-decoration: underline;
+    }
+    .posts_container {
+      padding: 0.5em 1em;
+      display: grid;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.details_container {
+  background-color: rgb(143, 138, 138);
+  padding: 3em 2em;
+  height: 85vh;
+
+  h2 {
+    color: rgb(230, 7, 7);
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 1em auto;
+    width: 80vw;
+  }
+  p {
+    font-size: 1.2em;
+    color: rgb(233, 233, 233);
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .buttons_container {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    button {
+      padding: 1.5em;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.5s;
+      font-family: "KoHo", sans-serif;
+      &:hover {
+        filter: brightness(1.1);
+      }
+      &:first-child {
+        background-color: transparent;
+        border: 2px solid rgb(230, 7, 7);
+        color: white;
+      }
+      &:nth-child(2) {
+        background-color: rgb(230, 7, 7);
+        color: white;
+
+        border: none;
+      }
+    }
+  }
+}
